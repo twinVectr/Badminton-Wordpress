@@ -1,0 +1,26 @@
+{
+  "name": "wm-badminton",
+  "version": "1.0.0",
+  "description": "=== Twenty Seventeen === Contributors: the WordPress team Requires at least: WordPress 4.7 Tested up to: WordPress 5.0-trunk Version: 1.7 License: GPLv2 or later License URI: http://www.gnu.org/licenses/gpl-2.0.html Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twinVectr/Badminton-Wordpress.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/twinVectr/Badminton-Wordpress/issues"
+  },
+  "homepage": "https://github.com/twinVectr/Badminton-Wordpress#readme",
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0"
+  }
+}
