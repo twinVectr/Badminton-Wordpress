@@ -5,10 +5,12 @@
   height: 500px;
   width: 100%;
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   color: $white;
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  z-index: -1;
 }
 
 
