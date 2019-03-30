@@ -1,0 +1,114 @@
+.section--height {
+  min-height: 650px;
+}
+
+body {
+  font-size: $base--font-size;
+  line-height: 1.25em;
+
+  @include respond-to(md) {
+    line-height: 1.375em;
+  }
+}
+
+p {
+  margin: 0 !important;
+}
+
+blockquote {
+  margin: 0 40px 0 40px !important;
+
+  &>p {
+    &::before {
+      content: '\201C';
+      position: relative;
+      top: 27px;
+      right: 10px;
+      font-size: 86px;
+      color: gray;
+    }
+
+    &::after {
+      content: '\201D';
+      position: relative;
+      top: 27px;
+      font-size: 86px;
+      margin-left: 10px;
+      color: gray;
+    }
+  }
+}
+
+// section header font size
+h3,
+.text-heading-sm {
+
+  font-size: $text-sm !important;
+  font-weight: 400;
+  display: inline-block;
+  margin: 0;
+  padding: $vertical--space-sm 0 !important;
+
+  @include respond-to(sm) {
+    font-size: calc(1 * #{$text-sm}) !important;
+  }
+
+  @include respond-to(md) {
+    font-size: calc(1.2 * #{$text-sm}) !important;
+    padding: $vertical--space-md 0 !important;
+  }
+
+  @include respond-to(lg) {
+    font-size: calc(1.3 * #{$text-sm}) !important;
+    padding: $vertical--space-lg 0 !important;
+  }
+}
+
+
+h2,
+.text-heading-md {
+  font-size: $text-md !important;
+  font-weight: 400;
+  display: inline-block;
+  margin: 0;
+  padding: $vertical--space-sm 0 !important;
+
+  @include respond-to(sm) {
+    font-size: calc(1 * #{$text-md}) !important;
+  }
+
+  @include respond-to(md) {
+    font-size: calc(1.2 * #{$text-md}) !important;
+    padding: $vertical--space-md 0 !important;
+  }
+
+  @include respond-to(lg) {
+    font-size: calc(1.3 * #{$text-md}) !important;
+    padding: $vertical--space-lg 0 !important;
+  }
+}
+
+h1,
+.text-heading-lg {
+
+  font-size: $text-lg !important;
+  font-weight: 400;
+  display: inline-block;
+  margin: 0 !important;
+  padding: $vertical--space-sm 0 !important;
+  line-height: 1.25em;
+
+  @include respond-to(sm) {
+    font-size: calc(1 * #{$text-lg}) !important;
+  }
+
+  @include respond-to(md) {
+    font-size: calc(1.2 * #{$text-lg}) !important;
+    padding: $vertical--space-md 0 !important;
+  }
+
+  @include respond-to(lg) {
+    font-size: calc(1.3 * #{$text-lg}) !important;
+    padding: $vertical--space-lg 0 !important;
+  }
+}

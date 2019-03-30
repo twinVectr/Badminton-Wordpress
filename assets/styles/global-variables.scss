@@ -1,0 +1,15 @@
+//spacing
+$base--vertical-space: 24px;
+$vertical--space-sm: $base--vertical-space;
+$vertical--space-md: calc(1.20 * #{$base--vertical-space});
+$vertical--space-lg: calc(1.40 * #{$base--vertical-space});
+
+
+//body base font
+$base--font-size: 1em;
+
+// text Headings 
+$base--text-size: 1em;
+$text-sm: calc(1.30 * #{$base--text-size});
+$text-md: calc(1.60 * #{$base--text-size});
+$text-lg: calc(1.90 * #{$base--text-size});

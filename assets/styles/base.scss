@@ -1,5 +1,8 @@
+@import "global-variables";
+@import "mixins/mediaQueries";
+@import "mixins/spacing";
 @import "color-vars";
+@import "typography";
 @import "helpers";
 @import "commons";
 @import "home-hero";
-

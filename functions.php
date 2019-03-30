@@ -433,7 +433,7 @@ function twentyseventeen_scripts()
 
     wp_enqueue_style('twentyseventeen-component-style', THEME_ROOT_URL . '/dist/styles/minified/base.min.css');
 
-    wp_enqueue_style('bootstrap-grid', THEME_ROOT_URL . '/dist/vendor/grid.min.css');
+    wp_enqueue_style('bootstrap-grid', THEME_ROOT_URL . '/assets/css/vendor/grid.min.css');
 
     // Load the dark colorscheme.
     if ('dark' === get_theme_mod('colorscheme', 'light') || is_customize_preview()) {
