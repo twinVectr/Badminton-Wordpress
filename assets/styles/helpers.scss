@@ -53,3 +53,9 @@ $sides: (Top, Bottom, Left, Right); // Leave this variable alone
   font-size: 15px;
   font-weight: 500;
 }
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
