@@ -7,7 +7,7 @@
   background-position: center;
   display: block;
   height: 500px;
-  width: 100%;
+  margin: 0 40px 0 40px;
   background-repeat: no-repeat;
   color: $white;
   position: absolute;
@@ -19,5 +19,4 @@
 
 .hero-text {
   color: $white;
-  letter-spacing: 0.01em;
 }

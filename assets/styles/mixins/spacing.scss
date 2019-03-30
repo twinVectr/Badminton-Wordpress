@@ -1,7 +1,21 @@
-$spacings: 'sm' 24px, 'md' 48px, 'lg' 96px;
+$spacings: 'sm'24px,
+'md'48px,
+'lg'96px;
 
 @each $vSpace in $spacings {
-    .vSpace-#{nth($vSpace, 1)} {
-        height: nth($vSpace, 2);
-    }
+  .vSpace-#{nth($vSpace, 1)} {
+    height: nth($vSpace, 2);
+  }
+}
+
+.vSpace {
+  height: 24px;
+
+  @include respond-to(md) {
+    height: 48px;
+  }
+
+  @include respond-to(lg) {
+    height: 96px;
+  }
 }

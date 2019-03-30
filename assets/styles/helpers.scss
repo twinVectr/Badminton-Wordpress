@@ -59,3 +59,7 @@ $sides: (Top, Bottom, Left, Right); // Leave this variable alone
   align-items: center;
   justify-content: flex-start;
 }
+
+.no-padding {
+  padding: 0 !important;
+}
