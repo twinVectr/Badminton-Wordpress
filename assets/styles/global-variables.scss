@@ -10,6 +10,7 @@ $base--font-size: 1em;
 
 // text Headings 
 $base--text-size: 1em;
+$text-xs: 12px;
 $text-sm: calc(1.30 * #{$base--text-size});
 $text-md: calc(1.60 * #{$base--text-size});
 $text-lg: calc(1.90 * #{$base--text-size});
