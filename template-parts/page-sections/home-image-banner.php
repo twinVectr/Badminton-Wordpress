@@ -6,4 +6,4 @@ global $mustache;
 
 $children = $mustache->render('image-banner', array('heroText' => $heroText));
 
-include locate_template('template-parts/components/image-context.php', false, false);
+include locate_template('template-parts/components/image-banner.php', false, false);

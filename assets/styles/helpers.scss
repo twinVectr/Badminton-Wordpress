@@ -4,10 +4,6 @@
   margin: 0;
 }
 
-.bold {
-  font-weight: bold;
-}
-
 .textCenter {
   text-align: center;
   margin: auto;
@@ -44,14 +40,8 @@ $sides: (Top, Bottom, Left, Right); // Leave this variable alone
   }
 }
 
-.section--subheader {
-  font-size: 25px;
-  font-weight: 400px;
-}
-
-.section--text-bold {
-  font-size: 15px;
-  font-weight: 500;
+.bold {
+  font-weight: bold;
 }
 
 .vertical-center {
@@ -62,4 +52,16 @@ $sides: (Top, Bottom, Left, Right); // Leave this variable alone
 
 .no-padding {
   padding: 0 !important;
+}
+
+.displayFlex {
+  display: flex;
+  justify-content: space-between;
+  .WM-flex-item {
+    flex: 0 0 calc(50% - 0.5em);
+  }
+}
+
+.font-xs {
+  font-size: $text-xs;
 }
