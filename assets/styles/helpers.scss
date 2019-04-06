@@ -59,6 +59,11 @@ $sides: (Top, Bottom, Left, Right); // Leave this variable alone
   justify-content: space-between;
   .WM-flex-item {
     flex: 0 0 calc(50% - 0.5em);
+    @include respond-to(sm) {
+      margin-left: 10%;
+      margin-right: 10%;
+      flex: 0 0 calc(30% - .5em);
+    }
   }
 }
 
