@@ -1,6 +1,5 @@
-<div class="section-membership">
+<div class="WM-section section-membership vertical-center">
   <div class="container">
-    <div class="row vSpace"></div>
     <div class="row">
       <div class="col-md-4 textCenter paddingBottom20 membership--left">
         <h1 class="no-padding bold"> <?=$sectionContentSplit[0]?></h1>
@@ -17,6 +16,5 @@
         </div>
       </div>
     </div>
-    <div class="row vSpace"></div>
   </div>
 </div>

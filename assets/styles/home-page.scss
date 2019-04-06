@@ -1,6 +1,5 @@
 .section-hero {
   height: 500px;
-  position: relative;
 }
 
 .WM-background-image-container {
@@ -30,6 +29,15 @@
           padding-bottom: 10px;
         }
       }
+    }
+  }
+}
+
+.section-open-hours {
+  background-color: $lighter-gray;
+  @include respond-to(md) {
+    .WM-button {
+      float: right;
     }
   }
 }

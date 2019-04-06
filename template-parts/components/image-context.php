@@ -1,4 +1,4 @@
-<div class="section-hero vertical-center">
+<div class="WM-section vertical-center">
   <div class="WM-background-image-container" style="background-image: url('<?=$backgroundImage?>')"></div>
   <div class="container">
     <div class="row">

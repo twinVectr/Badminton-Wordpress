@@ -70,3 +70,7 @@ $sides: (Top, Bottom, Left, Right); // Leave this variable alone
 .font-xs {
   font-size: $text-xs;
 }
+
+.floatRight {
+  float: right;
+}
