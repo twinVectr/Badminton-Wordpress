@@ -6,8 +6,14 @@
     </div>
     <div class="col-xs-12 col-md-1"></div>
     <div class="col-xs-12 col-md-5">
-      <p><?=$rightSideDescription?></p>
-      <div>
+      <p><?=$descriptionSplit[0]?></p>
+      <div class="row paddingTop25">
+        <div class="col-xs-5">
+          <p style="font-weight: bold;"><?=$descriptionSplit[1]?></p>
+        </div>
+        <div class="col-xs-5">
+          <p style="font-weight: bold;"><?=$descriptionSplit[2]?></p>
+        </div>
       </div>
     </div>
   </div>
