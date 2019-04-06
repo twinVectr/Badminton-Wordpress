@@ -1,5 +1,6 @@
 .section-hero {
   height: 500px;
+  position: relative;
 }
 
 .WM-background-image-container {
@@ -7,7 +8,6 @@
   background-position: center;
   display: block;
   height: 500px;
-  margin: 0 40px 0 40px;
   background-repeat: no-repeat;
   color: $white;
   position: absolute;
