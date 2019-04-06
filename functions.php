@@ -414,9 +414,10 @@ function twentyseventeen_colors_css_wrap()
     require_once get_parent_theme_file_path('/inc/color-patterns.php');
     $hue = absint(get_theme_mod('colorscheme_hue', 250));
     ?>
-	<style type="text/css" id="custom-theme-colors" <?php if (is_customize_preview()) {echo 'data-hue="' . $hue . '"';}?>>
-		<?php echo twentyseventeen_custom_colors_css(); ?>
-	</style>
+<style type="text/css" id="custom-theme-colors" <?php if (is_customize_preview()) {echo 'data-hue="' . $hue . '"';}?>>
+<?php echo twentyseventeen_custom_colors_css();
+?>
+</style>
 <?php }
 add_action('wp_head', 'twentyseventeen_colors_css_wrap');
 
@@ -623,11 +624,13 @@ $mustache = new Mustache_Engine(
     )
 );
 
-
-
-// custom settings 
+// custom settings
 
 add_action('init', 'my_remove_editor_from_post_type');
-function my_remove_editor_from_post_type() {
-    remove_post_type_support( 'page', 'editor' );
+function my_remove_editor_from_post_type()
+{
+    remove_post_type_support('page', 'editor');
 }
+
+// Add ACF settings
+require_once THEME_ROOT . '/ACFSettings.php';
