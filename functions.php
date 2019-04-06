@@ -416,7 +416,7 @@ function twentyseventeen_colors_css_wrap()
     ?>
 <style type="text/css" id="custom-theme-colors" <?php if (is_customize_preview()) {echo 'data-hue="' . $hue . '"';}?>>
 <?php echo twentyseventeen_custom_colors_css();
-?>
+    ?>
 </style>
 <?php }
 add_action('wp_head', 'twentyseventeen_colors_css_wrap');
@@ -432,9 +432,9 @@ function twentyseventeen_scripts()
     // Theme stylesheet.
     wp_enqueue_style('twentyseventeen-style', get_stylesheet_uri());
 
-    wp_enqueue_style('twentyseventeen-component-style', THEME_ROOT_URL . '/dist/styles/minified/base.min.css');
-
     wp_enqueue_style('bootstrap-grid', THEME_ROOT_URL . '/assets/css/vendor/grid.min.css');
+
+    wp_enqueue_style('twentyseventeen-component-style', THEME_ROOT_URL . '/dist/styles/minified/base.min.css');
 
     // Load the dark colorscheme.
     if ('dark' === get_theme_mod('colorscheme', 'light') || is_customize_preview()) {

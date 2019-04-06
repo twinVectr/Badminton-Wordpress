@@ -19,4 +19,15 @@
 
 .hero-text {
   color: $white;
+  padding-left: 10%;
+  
+  @include respond-to(lg) {
+    padding-left: 8%
+  }
+}
+
+.section-membership{
+  .membership--right{
+    font-size: 15px;
+  }
 }
