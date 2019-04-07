@@ -1,14 +1,11 @@
-<?php
-if (sizeof($sectionContentSplit) > 0) {
-    ?>
 <div class="WM-section section-open-hours">
   <div class="container">
     <div class="row vSpace"></div>
     <div class="row">
       <div class="col-sm-7">
-        <h1 class="bold"> <?=$sectionContentSplit[0]?></h1>
+        <h1 class="bold"> <?=$sectionContentSplit[0] ?? ''?></h1>
         <p>
-          <?=$sectionContentSplit[1]?>
+          <?=$sectionContentSplit[1] ?? ''?>
         </p>
       </div>
       <div class="col-sm-4 paddingTop35">
@@ -18,5 +15,3 @@ if (sizeof($sectionContentSplit) > 0) {
     <div class="row vSpace"></div>
   </div>
 </div>
-<?php
-}
