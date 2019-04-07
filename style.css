@@ -1,0 +1,12 @@
+/*
+Theme Name: WM Badminton
+Description: WM Badminton Club
+Version: 0.0.1
+Tags: bootstrap
+*/
+
+.body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
