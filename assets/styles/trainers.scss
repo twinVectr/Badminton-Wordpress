@@ -1,9 +1,13 @@
 .trainers-card {
   width: 320px;
-  height: 400px;
+  height: auto;
 }
 
 .trainer-profile-img {
   height: 200px;
   width: 100%;
+  background-color: $light-gray;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

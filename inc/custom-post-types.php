@@ -42,6 +42,7 @@ function WM_cpts_trainers()
         "capability_type" => "post",
         "map_meta_cap" => true,
         "hierarchical" => false,
+        'menu_icon' => 'dashicons-groups',
         "rewrite" => array("slug" => "trainers", "with_front" => true),
         "query_var" => true,
         "supports" => array("title", "editor", "thumbnail", "custom-fields"),
