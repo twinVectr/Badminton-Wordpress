@@ -222,6 +222,11 @@ require get_parent_theme_file_path('/inc/customizer.php');
 require get_parent_theme_file_path('/inc/icon-functions.php');
 
 /**
+ * WM Custom Post types
+ */
+require get_parent_theme_file_path('/inc/custom-post-types.php');
+
+/**
  * WM Badminton Overrides
  */
 require THEME_ROOT . '/vendor/mustache/mustache/src/Mustache/Autoloader.php';
