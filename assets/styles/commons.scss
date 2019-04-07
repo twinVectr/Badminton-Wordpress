@@ -8,10 +8,24 @@
 }
 
 .WM-banner-link {
-  color: $yellow;
-  text-decoration: underline;
   font-size: $text-xs;
+  background: none;
+  color: $yellow;
+  padding: 0;
+  cursor: pointer;
+  &:after{
+    content: "\279D";
+    padding-left: 5px;
+    display: inline-block;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &:hover {
+    text-decoration: underline;
+  }
 }
+
 
 .WM-container {
   margin-left: 10%;
@@ -21,4 +35,26 @@
 .WM-section {
   height: 500px;
   position: relative;
+}
+
+.WM-blockquote {
+  margin: 0 40px 0 40px !important;
+  &>p {
+    &::before {
+      content: '\201C';
+      position: relative;
+      top: 27px;
+      right: 10px;
+      font-size: 86px;
+      color: gray;
+    }
+    &::after {
+      content: '\201D';
+      position: relative;
+      top: 27px;
+      font-size: 86px;
+      margin-left: 10px;
+      color: gray;
+    }
+  }
 }

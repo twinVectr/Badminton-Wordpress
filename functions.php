@@ -104,26 +104,16 @@ add_action('after_setup_theme', 'WM_setup');
 function WM_fonts_url()
 {
     $fonts_url = '';
+    $font_families = array();
 
-    /*
-     * Translators: If there are characters in your language that are not
-     * supported by Libre Franklin, translate this to 'off'. Do not translate
-     * into your own language.
-     */
-    $libre_franklin = _x('on', 'Libre Franklin font: on or off', 'WM');
+    $font_families[] = 'Heebo:100,300,400,500,700,800,900';
 
-    if ('off' !== $libre_franklin) {
-        $font_families = array();
+    $query_args = array(
+        'family' => urlencode(implode('|', $font_families)),
+        'subset' => urlencode('latin,latin-ext'),
+    );
 
-        $font_families[] = 'Libre Franklin:300,300i,400,400i,600,600i,800,800i';
-
-        $query_args = array(
-            'family' => urlencode(implode('|', $font_families)),
-            'subset' => urlencode('latin,latin-ext'),
-        );
-
-        $fonts_url = add_query_arg($query_args, 'https://fonts.googleapis.com/css');
-    }
+    $fonts_url = add_query_arg($query_args, 'https://fonts.googleapis.com/css');
 
     return esc_url_raw($fonts_url);
 }
