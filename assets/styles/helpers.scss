@@ -54,19 +54,6 @@ $sides: (Top, Bottom, Left, Right); // Leave this variable alone
   padding: 0 !important;
 }
 
-.displayFlex {
-  display: flex;
-  justify-content: space-between;
-  .WM-flex-item {
-    flex: 0 0 calc(50% - 0.5em);
-    @include respond-to(sm) {
-      margin-left: 10%;
-      margin-right: 10%;
-      flex: 0 0 calc(30% - .5em);
-    }
-  }
-}
-
 .font-xs {
   font-size: $text-xs;
 }
@@ -74,3 +61,11 @@ $sides: (Top, Bottom, Left, Right); // Leave this variable alone
 .floatRight {
   float: right;
 }
+
+.displayFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+

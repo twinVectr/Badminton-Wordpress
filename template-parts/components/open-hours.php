@@ -1,3 +1,6 @@
+<?php
+if (sizeof($sectionContentSplit) > 0) {
+    ?>
 <div class="WM-section section-open-hours">
   <div class="container">
     <div class="row vSpace"></div>
@@ -15,3 +18,5 @@
     <div class="row vSpace"></div>
   </div>
 </div>
+<?php
+}

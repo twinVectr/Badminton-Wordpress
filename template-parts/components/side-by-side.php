@@ -6,11 +6,11 @@
       </div>
       <div class="col-md-6 col-md-offset-1 membership--right">
         <p><?=$sectionContentSplit[1]?></p>
-        <div class="displayFlex paddingTop25 font-xs bold ">
-          <div class="side-by-side WM-flex-item">
+        <div class="membership--right-sub paddingTop25 font-xs bold">
+          <div class="side-by-side membership--right-subItem">
             <p><?=$sectionContentSplit[2]?></p>
           </div>
-          <div class="side-by-side WM-flex-item">
+          <div class="side-by-side membership--right-subItem">
             <p><?=$sectionContentSplit[3]?></p>
           </div>
         </div>
