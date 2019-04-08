@@ -158,6 +158,10 @@ add_action('wp_head', 'WM_javascript_detection', 0);
  */
 function WM_badminton_scripts()
 {
+    if (has_nav_menu('main_menu')) {
+        wp_enqueue_script('WM-navigation', get_theme_file_uri('/assets/js/navigation.js'), array('jquery'), '1.0', true);
+    }
+
     // Add custom fonts, used in the main stylesheet.
     wp_enqueue_style('WM-fonts', WM_fonts_url(), array(), null);
 
