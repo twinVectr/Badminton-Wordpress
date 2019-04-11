@@ -21,11 +21,12 @@
 }
 
 .section-membership{
+
   .membership--right{
     font-size: $base--text-size;
     .side-by-side{
       p {
-        &:nth-child(2) {
+        &:nth-child(1) {
           padding-bottom: 10px;
         }
       }
@@ -60,3 +61,35 @@
   }
 }
 
+.blockquote--left{
+    p {
+      &:nth-child(1) {
+        font-size: $base--text-size;
+
+        &::before {
+          content: '\201C';
+          position: relative;
+          font-size: $base--text-size;
+          color: gray;
+        }
+  
+        &::after {
+          content: '\201D';
+          position: relative;
+          font-size: $base--text-size;
+          color: gray;
+        }
+      }
+
+      &:nth-child(2) {
+         font-size: $text-xs;
+
+         &::before {
+          content: '\2012';
+          position: relative;
+          font-size: $base--text-size;
+          color: gray;
+        }
+      }
+  }
+}
