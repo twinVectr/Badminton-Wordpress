@@ -88,4 +88,55 @@ if (function_exists('acf_add_local_field_group')):
         'description' => '',
     ));
 
+    acf_add_local_field_group(array(
+        'key' => 'group_5cae8e096e570',
+        'title' => 'Trainers',
+        'fields' => array(
+            array(
+                'key' => 'field_5cae8e111af2c',
+                'label' => 'Trainer Type',
+                'name' => 'head_coach',
+                'type' => 'select',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'choices' => array(
+                    'HC' => 'Head Coach',
+                    'AC' => 'Assistant Coach',
+                    'FM' => 'Former Member',
+                ),
+                'default_value' => array(
+                ),
+                'allow_null' => 0,
+                'multiple' => 0,
+                'ui' => 0,
+                'return_format' => 'value',
+                'ajax' => 0,
+                'placeholder' => '',
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'trainers',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'seamless',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+        'active' => true,
+        'description' => '',
+    ));
+
 endif;
