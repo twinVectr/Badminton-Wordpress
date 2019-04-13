@@ -1,5 +1,8 @@
 <?php
 
+$joinNowPageID = strval(get_page_by_path('join-now')->ID);
+$homePageID = strval(get_page_by_path('home-page')->ID);
+
 if (function_exists('acf_add_local_field_group')):
 
     acf_add_local_field_group(array(
@@ -31,7 +34,14 @@ if (function_exists('acf_add_local_field_group')):
                 array(
                     'param' => 'page',
                     'operator' => '==',
-                    'value' => '2',
+                    'value' => $joinNowPageID,
+                ),
+            ),
+            array(
+                array(
+                    'param' => 'page',
+                    'operator' => '==',
+                    'value' => $homePageID,
                 ),
             ),
         ),

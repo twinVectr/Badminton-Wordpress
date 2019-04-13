@@ -10,13 +10,12 @@
 .main-navigation {
   display: none;
   @include respond-to(md) {
-    position: absolute;
     display: block;
     top: 0;
     width: 100%;
     z-index: 5;
     padding: 20px 0 20px 0; 
-    background: linear-gradient($black, rgba(0,0,0,0.001));
+    height: 100px;
     ul {
       float: right;
       > li {
@@ -36,6 +35,25 @@
         }
       }
     }
+  }
+}
+
+.main-navigation-front {
+  @extend .main-navigation;
+  background: linear-gradient($black, rgba(0,0,0,0.001));
+  position: absolute;
+}
+
+.main-navigation-other {
+  @extend .main-navigation;
+  position: relative;
+  ul {
+    float: right;
+    > li {
+      a {
+        color: $black;
+      }
+    } 
   }
 }
 
