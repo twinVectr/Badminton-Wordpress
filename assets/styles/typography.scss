@@ -20,29 +20,6 @@ p {
   font-size: 1em;
 }
 
-blockquote {
-  margin: 0 40px 0 40px !important;
-
-  &>p {
-    &::before {
-      content: '\201C';
-      position: relative;
-      top: 27px;
-      right: 10px;
-      font-size: 86px;
-      color: gray;
-    }
-
-    &::after {
-      content: '\201D';
-      position: relative;
-      top: 27px;
-      font-size: 86px;
-      margin-left: 10px;
-      color: gray;
-    }
-  }
-}
 
 // section header font size
 h3,
@@ -117,3 +94,4 @@ h1,
     padding: $vertical--space-lg 0 !important;
   }
 }
+

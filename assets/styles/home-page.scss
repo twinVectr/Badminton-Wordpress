@@ -1,12 +1,12 @@
 .section-hero {
-  height: 500px;
+  height: 800px;
 }
 
 .WM-background-image-container {
   background-size: cover;
   background-position: center;
   display: block;
-  height: 500px;
+  height: 100%;
   background-repeat: no-repeat;
   color: $white;
   position: absolute;
@@ -62,7 +62,7 @@
 }
 
 .blockquote--left{
-    p {
+    h1 {
       &:nth-child(1) {
         font-size: $base--text-size;
 
@@ -70,26 +70,24 @@
           content: '\201C';
           position: relative;
           font-size: $base--text-size;
-          color: gray;
+          color: $black;
         }
   
         &::after {
           content: '\201D';
           position: relative;
           font-size: $base--text-size;
-          color: gray;
+          color: $black;
         }
       }
-
-      &:nth-child(2) {
-         font-size: $text-xs;
-
-         &::before {
-          content: '\2012';
-          position: relative;
-          font-size: $base--text-size;
-          color: gray;
-        }
-      }
-  }
+    }
+    p {
+      font-size: $text-xs;
+      &::before {
+       content: '\2014';
+       position: relative;
+       font-size: $base--text-size;
+       color: $black;
+     }
+   }
 }

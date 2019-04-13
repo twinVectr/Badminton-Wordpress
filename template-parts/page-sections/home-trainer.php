@@ -1,8 +1,8 @@
 <?php
 
 $backgroundImage = THEME_ROOT_URL . '/assets/images/coffee.jpg';
-$heroText = "Group & Private Classes";
-$subText = "LEARN MORE";
+$heroText = "World-class Trainers";
+$subText = "MEET THE TRAINERS";
 global $mustache;
 
 $children = $mustache->render('image-banner', array('heroText' => $heroText, 'subText' => $subText));
