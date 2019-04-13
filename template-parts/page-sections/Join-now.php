@@ -1,14 +1,20 @@
-<div class="WM-section section-join-now">
-  <div class="container">
-    <div class="row vSpace"></div>
-    <div class="row">
-      <div class="col-sm-5">
-        <h1 class="bold"> Join Now </h1>
-      </div>
-      <div class="col-sm-6">
-        <?=do_shortcode('[contact-form-7 id="59" title="Join Now"]');?>
-      </div>
-    </div>
-    <div class="row vSpace"></div>
-  </div>
-</div>
+
+<?php
+
+$sectionContent = get_field('location-hours-classes');
+
+$sectionContentSplit = explode("####", $sectionContent);
+
+$sectionContent = array(
+    'leftContent' => $sectionContentSplit[0],
+    'rightContent' => $sectionContentSplit[1],
+    'sideBySideLeft' => $sectionContentSplit[2],
+    'sideBySideRight' => $sectionContentSplit[3],
+    'sideBySideBottom' => do_shortcode('[contact-form-7 id="59" title="Join Now"]'),
+);
+
+global $mustache;
+
+$children = $mustache->render('join-now-content', array('sectionContentSplit' => $sectionContent));
+
+include locate_template('template-parts/components/join-now.php', false, false);
