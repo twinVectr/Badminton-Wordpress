@@ -23,7 +23,7 @@ $trainers = get_posts($args);
     <div class="row paddingBottom30">
       <div class="col-sm-5 textCenter">
         <div
-          style="height: 400px; width: 500px; background-image: url(<?=$headCoachProfileImage?>); background-size: cover;  background-position: center">
+          style="height: 400px; width: auto; background-image: url(<?=$headCoachProfileImage?>); background-size: cover;  background-position: center">
         </div>
       </div>
       <div class="col-sm-6">

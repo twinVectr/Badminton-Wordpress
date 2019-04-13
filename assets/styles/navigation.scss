@@ -1,14 +1,22 @@
+.navigation-top {
+  position: relative;
+}
+
+.WM-nav-logo {
+  padding-left: 4%;
+  float: left;
+}
+
 .main-navigation {
   display: none;
   @include respond-to(md) {
     position: absolute;
     display: block;
     top: 0;
-    width: 90%;
-    left: 5%;
-    background: transparent;
+    width: 100%;
     z-index: 5;
-    padding: 20px; 
+    padding: 20px 0 20px 0; 
+    background: linear-gradient($black, rgba(0,0,0,0.001));
     ul {
       float: right;
       > li {
@@ -29,6 +37,10 @@
       }
     }
   }
+}
+
+.menu-main-menu-container {
+  padding-right: 4%;
 }
 
 .main-navigation-mobile {
@@ -69,6 +81,10 @@
 }
 
 
+/* 
+* Mobile nav styles
+*/
+
 .nav-toggle {
   position: relative;
   padding: 10px;
@@ -90,23 +106,10 @@
   -webkit-transition: .2s ease all;
           transition: .2s ease all;
   
-  /* 
-   * ENLARGED FOR PRESENTATION
-   * Keep these values at the same proportion 
-   * for it to look correct
-  */
   border-radius: 8px;
   height: 3px;
   width: 42px;
   margin-bottom: 8px;
-  
-  /*
-   * Practical values:
-   * border-radius: 2px;
-   * height: 2px;
-   * width: 25px;
-   * margin-bottom: 4px;
-  */
 }
 
 .nav-toggle .bar-bot {

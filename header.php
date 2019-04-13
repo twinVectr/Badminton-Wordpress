@@ -25,7 +25,7 @@
 </head>
 
 <body <?php body_class();?>>
-  <div id="page" class="site">
+  <div id="page" class="site container-fluid">
 
     <header id="masthead" class="site-header" role="banner">
       <?php if (has_nav_menu('main_menu')): ?>
@@ -36,4 +36,4 @@
       </div><!-- .navigation-top -->
       <?php endif;?>
     </header><!-- #masthead -->
-    <div class="container-fluid">
+    <div>

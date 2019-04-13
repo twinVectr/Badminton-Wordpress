@@ -13,7 +13,7 @@
   </div>
 </nav>
 <nav class="main-navigation" role="navigation">
-  <div style="float: left"><img src="<?=THEME_ROOT_URL?>/assets/images/WM-logo.png" height="100" width="100" /></div>
+  <div class="WM-nav-logo"><img src="<?=THEME_ROOT_URL?>/assets/images/WM-logo.png" height="100" width="100" /></div>
   <?php wp_nav_menu(array(
     'theme_location' => 'main_menu',
     'menu_id' => 'main-menu',
