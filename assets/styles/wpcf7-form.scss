@@ -1,13 +1,34 @@
+
+
 .wpcf7-form {
-  input[type=text], input[type=email], textarea {
-    padding: 15px;
-    margin-top: 5px;
-    width: 100%;
-    font-size: $text-xs;
-  }
+
   p {
     margin-top: 10px !important;
-    width: 70%;
+    width: 94%;
+  }
+
+  input[name=first-name] {
+    padding: 15px;
+    margin-top: 5px;
+    margin-right: 5px;
+    width: auto;
+    display: inline-block;
+    font-size: $text-xs;
+  }
+
+  input[name=last-name] {
+    @extend input[name=first-name];
+    margin-right: 0;
+  }
+
+  input[type=email], input[name=your-subject] {
+    @extend input[name=last-name];
+    display: block;
+    width: 94%;
+  }
+
+  .wpcf7-textarea {
+    width: 99% !important;
   }
 
   input[type=submit] {
@@ -27,7 +48,6 @@
       }
     }
   }
-
 
   .wpcf7-not-valid-tip {
     margin-top: 5px;
