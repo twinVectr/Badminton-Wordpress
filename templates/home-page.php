@@ -8,7 +8,5 @@ get_template_part('template-parts/page-sections/home', 'membership');
 get_template_part('template-parts/page-sections/home', 'image-banner');
 get_template_part('template-parts/page-sections/home', 'blockquote');
 get_template_part('template-parts/page-sections/home', 'trainer');
-get_template_part('template-parts/page-sections/trainers', 'profile');
-get_template_part('template-parts/page-sections/join', 'now');
 
 get_footer();
