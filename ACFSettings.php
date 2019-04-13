@@ -2,6 +2,7 @@
 
 $joinNowPageID = strval(get_page_by_path('join-now')->ID);
 $homePageID = strval(get_page_by_path('home-page')->ID);
+$aboutPageID = strval(get_page_by_path('about-page')->ID);
 
 if (function_exists('acf_add_local_field_group')):
 
@@ -44,6 +45,13 @@ if (function_exists('acf_add_local_field_group')):
                     'value' => $homePageID,
                 ),
             ),
+            array(
+                array(
+                    'param' => 'page',
+                    'operator' => '==',
+                    'value' => $aboutPageID,
+                ),
+            ),
         ),
         'menu_order' => 0,
         'position' => 'normal',
@@ -72,7 +80,13 @@ if (function_exists('acf_add_local_field_group')):
                     'class' => '',
                     'id' => '',
                 ),
-                'default_value' => '',
+                'default_value' => 'Open Daily
+
+								                ####
+
+								                7 am - 8 pm Weekdays
+
+								                9 am - 3 pm Weekends',
                 'tabs' => 'all',
                 'toolbar' => 'full',
                 'media_upload' => 1,
@@ -83,8 +97,8 @@ if (function_exists('acf_add_local_field_group')):
             array(
                 array(
                     'param' => 'page',
-                    'operator' => '==',
-                    'value' => '2',
+                    'operator' => '!=',
+                    'value' => '99999',
                 ),
             ),
         ),

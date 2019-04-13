@@ -1,0 +1,32 @@
+.section-join-now {
+  height: auto;
+
+  .join-now--right{
+    font-size: $base--text-size;
+    .side-by-side{
+      p {
+        &:nth-child(1) {
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .join-now--right-sub {
+    display: flex;
+    justify-content: space-between;
+    .join-now--right-subItem {
+      flex: 0 0 calc(50% - 0.5em);
+      @include respond-to(sm) {
+        margin-left: 10%;
+        margin-right: 10%;
+        flex: 0 0 calc(30% - .5em);
+      }
+      @include respond-to(lg) {
+        margin: 0;
+        flex: 1;
+      }
+
+    }
+  }
+}
