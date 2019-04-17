@@ -11,23 +11,15 @@
 
   // logic for sticky nav
 
-  var mainNav = document.getElementsByClassName('main-nav')[0];
+  var mainNav = document.getElementsByClassName('main-navigation-front');
 
-
-  var mainNavOffset = mainNav.offsetTop;
-
-  $(document).ready(function () {
-    window.onscroll = function () {
-      onScrollSticky();
-    }
-  });
-
-  function onScrollSticky() {
-    if (window.pageYOffset >= 120) {
-      mainNav.classList.add("sticky")
-    } else {
-      mainNav.classList.remove("sticky");
+  if (mainNav && mainNav.length > 0) {
+    window.onscroll = function onScrollSticky() {
+      if (window.pageYOffset >= 120) {
+        mainNav[0].classList.add("sticky")
+      } else {
+        mainNav[0].classList.remove("sticky");
+      }
     }
   }
-
 })(jQuery);

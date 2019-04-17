@@ -19,7 +19,7 @@ $navClasses = $isFrontPage ? 'main-navigation-front' : 'main-navigation-other';
 ));?>
   </div>
 </nav>
-<nav class="<?=$navClasses?> main-nav" role="navigation">
+<nav class="<?=$navClasses?>" role="navigation">
   <a href="<?=get_home_url()?>" class="WM-nav-logo"><img src="<?=THEME_ROOT_URL?>/assets/images/WM-logo.png"
       height="150" /></a>
   <?php wp_nav_menu(array(
