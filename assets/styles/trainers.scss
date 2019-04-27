@@ -1,6 +1,9 @@
 .trainers-card {
-  width: 320px;
+  width: 100%;
   height: auto;
+  @include respond-to(md) {
+    width: 320px;
+  }
 }
 
 .trainer-profile-img {
@@ -10,4 +13,33 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.section-trainers {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+
+  .headCoachProfileImage {
+    justify-self: stretch;
+    grid-column-start: 1;
+  }
+
+  @include respond-to(md) {
+    .grid {
+      grid-template-columns: 1.5fr 2fr;
+      grid-gap: 2rem;
+    }
+
+  }
+}
+
+// Trainer detail page 
+
+.trainer-details {
+  p {
+    line-height: 2em;
+  }
 }

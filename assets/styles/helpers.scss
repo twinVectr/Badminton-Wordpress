@@ -29,6 +29,14 @@ $spaceamounts: (5,
 $sides: (Top, Bottom, Left, Right); // Leave this variable alone
 
 @each $space in $spaceamounts {
+
+  .margin#{$space} {
+    margin: #{$space}px !important;
+  }
+  .padding#{$space} {
+    padding: #{$space}px !important;
+  }
+
   @each $side in $sides {
     .margin#{$side}#{$space} {
       margin-#{$side}: #{$space}px !important;
@@ -39,6 +47,7 @@ $sides: (Top, Bottom, Left, Right); // Leave this variable alone
     }
   }
 }
+
 
 .bold {
   font-weight: bold;
@@ -62,10 +71,14 @@ $sides: (Top, Bottom, Left, Right); // Leave this variable alone
   float: right;
 }
 
+.floatLeft {
+  float: left;
+}
+
 .displayFlex {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 }
 
 .inlineBlock {

@@ -21,7 +21,7 @@ $navClasses = $isFrontPage ? 'main-navigation-front' : 'main-navigation-other';
 </nav>
 <nav class="<?=$navClasses?>" role="navigation">
   <a href="<?=get_home_url()?>" class="WM-nav-logo"><img src="<?=THEME_ROOT_URL?>/assets/images/WM-logo.png"
-      height="150" /></a>
+      height="110" /></a>
   <?php wp_nav_menu(array(
     'theme_location' => 'main_menu',
     'menu_id' => 'main-menu',

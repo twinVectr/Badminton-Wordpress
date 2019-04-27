@@ -17,52 +17,46 @@ $args = array(
 $trainers = get_posts($args);
 
 ?>
-<div class="section-trainers">
-  <div class="container ">
-    <div class="row vSpace"></div>
-    <div class="row paddingBottom30">
-      <div class="col-sm-5 textCenter">
-        <div
-          style="height: 400px; width: auto; background-image: url(<?=$headCoachProfileImage?>); background-size: cover;  background-position: center">
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <p><?=$headCoachQuery->post_content?></p>
-        <div class="marginTop20 marginBottom30">
-          <p class="marginBottom10"><b>Specification:</b></p>
-          <p>Strengthing</p>
-          <p>Footwork</p>
-          <p>Foundations</p>
-        </div>
-        <button class="WM-button ">Read More</button>
-      </div>
-
-
+<div class="section-trainers container">
+  <div class="vSpace"></div>
+  <div class="grid">
+    <div class="headCoachProfileImage"
+      style="height: 400px; width: auto; background-image: url(<?=$headCoachProfileImage?>); background-size: cover;  background-position: center">
     </div>
-    <div class="displayFlex">
+    <div>
+      <p><?=substr($headCoachQuery->post_content, 0, 400)?>...</p>
+      <div class="marginTop20 marginBottom30">
+        <p class="marginBottom10"><b>Specification:</b></p>
+        <p>Strengthing</p>
+        <p>Footwork</p>
+        <p>Foundations</p>
+      </div>
+      <a href="<?=get_permalink($headCoachQuery)?>"><button class="WM-button ">Read More</button></a>
+    </div>
+  </div>
 
-      <?php foreach ($trainers as $trainer) {
+  <div class="vSpace"></div>
+
+  <div class="displayFlex">
+    <?php foreach ($trainers as $trainer) {
     $trainerProfileImage = get_the_post_thumbnail_url($trainer->ID) ?? '';
     ?>
-
-
-      <div class="trainers-card">
-        <div class="trainer-profile-img marginBottom20" style="background-image: url(<?=$trainerProfileImage?>)">
-        </div>
-        <p class="trainer-name paddingBottom10"> <?=$trainer->post_title?> </p>
-        <p class="bold">Specifications</p>
-        <p>Sports Conditioning</p>
-        <p>Weight Management</p>
-        <p>Strength Traning</p>
-        <p class="paddingTop10">
-          <?=$trainer->post_content?>
-        </p>
+    <div class="trainers-card">
+      <div class="trainer-profile-img marginBottom20" style="background-image: url(<?=$trainerProfileImage?>)">
       </div>
+      <p class="trainer-name paddingBottom10"> <?=$trainer->post_title?> </p>
+      <p class="bold">Specifications</p>
+      <p>Sports Conditioning</p>
+      <p>Weight Management</p>
+      <p>Strength Traning</p>
+      <p class="paddingTop10">
+        <?=$trainer->post_content?>
+      </p>
+    </div>
 
-      <?php
+    <?php
 }?>
 
-    </div>
-    <div class="row vSpace"></div>
   </div>
+  <div class="vSpace"></div>
 </div>
