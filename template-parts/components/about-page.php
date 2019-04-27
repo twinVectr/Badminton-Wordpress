@@ -4,6 +4,9 @@
     <div class="row">
         <?=$children?>
     </div>
+    <div class="row">
+        <?=$childrenTwo?>
+    </div>
   </div>
 </div>
 <div class="row vSpace"></div>

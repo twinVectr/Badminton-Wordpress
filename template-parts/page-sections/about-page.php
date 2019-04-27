@@ -1,18 +1,27 @@
 
 <?php
+global $mustache;
 
 $sectionContent = get_field('location-hours-classes');
 
-$sectionContentSplit = explode("####", $sectionContent);
+$sectionContentData = explode("@@@@", $sectionContent);
 
-$sectionContent = array(
-    'leftContent' => $sectionContentSplit[0],
-    'rightContent' => $sectionContentSplit[1],
-    'sideBySideLeft' => $sectionContentSplit[2],
-    'sideBySideRight' => $sectionContentSplit[3]);
+$sectionContentOneSplit = explode("####", $sectionContentData[0]);
+$sectionContentTwoSplit = explode("####", $sectionContentData[1]);
 
-global $mustache;
+$sectionContentOne = array(
+    'leftContent' => $sectionContentOneSplit[0],
+    'rightContent' => $sectionContentOneSplit[1],
+    'sideBySideLeft' => $sectionContentOneSplit[2],
+    'sideBySideRight' => $sectionContentOneSplit[3]);
 
-$children = $mustache->render('about', array('sectionContentSplit' => $sectionContent));
+$sectionContentTwo = array(
+    'leftContent' => $sectionContentTwoSplit[0],
+    'rightSideBySideLeft' => $sectionContentTwoSplit[1],
+    'rightSideBySideRight' => $sectionContentTwoSplit[2]);
+
+$children = $mustache->render('about', array('sectionContentSplit' => $sectionContentOne));
+
+$childrenTwo = $mustache->render('about.subcontent', array('sectionContentSplit' => $sectionContentTwo));
 
 include locate_template('template-parts/components/about-page.php', false, false);
