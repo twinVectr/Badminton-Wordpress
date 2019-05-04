@@ -15,6 +15,18 @@
   background-repeat: no-repeat;
 }
 
+.trainer-img{
+width: 100%;
+
+  @include respond-to(md){
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    width: 300px;
+  }
+}
+
 .section-trainers {
   .grid {
     display: grid;

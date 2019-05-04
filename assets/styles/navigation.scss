@@ -88,7 +88,7 @@
       padding-left: 12%;
       > li {
         list-style: none;
-        padding-top: 20px;
+        padding-top: 40px;
         >a {
           color: $white;
           text-decoration: none;
@@ -110,6 +110,9 @@
   border: 1px solid transparent;
   margin: 7px 0;
   z-index: 8;
+  background-color: #0e0e0e7d;
+  border-radius: 100%;
+  height: 60px;
 }
 
 .nav-toggle:focus {
@@ -134,18 +137,24 @@
   margin-bottom: 0;
 }
 
-.opened .bar-top {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  -webkit-transform-origin: 15% 15%;
-          transform-origin: 15% 15%;
-}
-.opened .bar-mid {
-  opacity: 0;
-}
-.opened .bar-bot {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(-45deg);
-  -webkit-transform-origin: 10% 95%;
-          transform-origin: 10% 95%;
+.opened {
+  background-color: transparent;
+
+  .bar-top {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 15% 15%;
+            transform-origin: 15% 15%;
+  }
+
+  .bar-mid {
+    opacity: 0;
+  }
+
+  .bar-bot {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 10% 95%;
+            transform-origin: 10% 95%;
+  }
 }
