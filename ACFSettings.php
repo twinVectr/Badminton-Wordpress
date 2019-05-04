@@ -348,11 +348,11 @@ if (function_exists('acf_add_local_field_group')):
                 ),
                 'default_value' => 'Open Daily
 
-																								                ####
+																									                ####
 
-																								                7 am - 8 pm Weekdays
+																									                7 am - 8 pm Weekdays
 
-																								                9 am - 3 pm Weekends',
+																									                9 am - 3 pm Weekends',
                 'tabs' => 'all',
                 'toolbar' => 'full',
                 'media_upload' => 1,
@@ -408,6 +408,25 @@ if (function_exists('acf_add_local_field_group')):
                 'return_format' => 'value',
                 'ajax' => 0,
                 'placeholder' => '',
+            ),
+            array(
+                'key' => 'field_5ccdec8e073c3',
+                'label' => 'Specification',
+                'name' => 'trainer_specification',
+                'type' => 'wysiwyg',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'tabs' => 'all',
+                'toolbar' => 'full',
+                'media_upload' => 1,
+                'delay' => 0,
             ),
         ),
         'location' => array(

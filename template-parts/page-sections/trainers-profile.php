@@ -3,6 +3,7 @@
 global $wpdb;
 $headCoachQuery = $wpdb->get_results("SELECT * FROM {$wpdb->prefix}posts AS PO LEFT JOIN {$wpdb->prefix}postmeta AS PM ON PO.ID = PM.post_id where PM.meta_key='head_coach' AND PM.meta_value='HC'")[0];
 $headCoachProfileImage = get_the_post_thumbnail_url($headCoachQuery->ID) ?? '';
+$headCoach_specification = get_field('trainer_specification', $headCoachQuery->ID);
 
 $args = array(
     'posts_per_page' => 5,
@@ -27,9 +28,7 @@ $trainers = get_posts($args);
       <p><?=substr($headCoachQuery->post_content, 0, 400)?>...</p>
       <div class="marginTop20 marginBottom30">
         <p class="marginBottom10"><b>Specification:</b></p>
-        <p>Strengthing</p>
-        <p>Footwork</p>
-        <p>Foundations</p>
+        <?=$headCoach_specification?>
       </div>
       <a href="<?=get_permalink($headCoachQuery)?>"><button class="WM-button ">Read More</button></a>
     </div>
@@ -40,15 +39,14 @@ $trainers = get_posts($args);
   <div class="displayFlex">
     <?php foreach ($trainers as $trainer) {
     $trainerProfileImage = get_the_post_thumbnail_url($trainer->ID) ?? '';
+    $trainerSpecs = get_field('trainer_specification', $trainer->ID);
     ?>
     <div class="trainers-card">
       <div class="trainer-profile-img marginBottom20" style="background-image: url(<?=$trainerProfileImage?>)">
       </div>
       <p class="trainer-name paddingBottom10"> <?=$trainer->post_title?> </p>
       <p class="bold">Specifications</p>
-      <p>Sports Conditioning</p>
-      <p>Weight Management</p>
-      <p>Strength Traning</p>
+      <?=$trainerSpecs?>
       <p class="paddingTop10">
         <?=$trainer->post_content?>
       </p>
