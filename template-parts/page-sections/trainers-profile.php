@@ -25,7 +25,8 @@ $trainers = get_posts($args);
       style="height: 400px; width: auto; background-image: url(<?=$headCoachProfileImage?>); background-size: cover;  background-position: center">
     </div>
     <div>
-      <p><?=substr($headCoachQuery->post_content, 0, 400)?>...</p>
+      <h2 class="noPadding marginTop5"><?=$headCoachQuery->post_title?></h2>
+      <p class="paddingTop20"><?=substr($headCoachQuery->post_content, 0, 400)?>...</p>
       <div class="marginTop20 marginBottom30">
         <p class="marginBottom10"><b>Specification:</b></p>
         <?=$headCoach_specification?>
@@ -42,9 +43,9 @@ $trainers = get_posts($args);
     $trainerSpecs = get_field('trainer_specification', $trainer->ID);
     ?>
     <div class="trainers-card">
-      <div class="trainer-profile-img marginBottom20" style="background-image: url(<?=$trainerProfileImage?>)">
+      <div class="trainer-profile-img" style="background-image: url(<?=$trainerProfileImage?>)">
       </div>
-      <p class="trainer-name paddingBottom10"> <?=$trainer->post_title?> </p>
+      <h3 class="trainer-name"> <?=$trainer->post_title?> </h3>
       <p class="bold">Specifications</p>
       <?=$trainerSpecs?>
       <p class="paddingTop10">
