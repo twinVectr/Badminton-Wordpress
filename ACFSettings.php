@@ -348,11 +348,11 @@ if (function_exists('acf_add_local_field_group')):
                 ),
                 'default_value' => 'Open Daily
 
-																									                ####
+																										                ####
 
-																									                7 am - 8 pm Weekdays
+																										                7 am - 8 pm Weekdays
 
-																									                9 am - 3 pm Weekends',
+																										                9 am - 3 pm Weekends',
                 'tabs' => 'all',
                 'toolbar' => 'full',
                 'media_upload' => 1,
@@ -441,6 +441,49 @@ if (function_exists('acf_add_local_field_group')):
         'menu_order' => 0,
         'position' => 'normal',
         'style' => 'seamless',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+        'active' => true,
+        'description' => '',
+    ));
+
+    acf_add_local_field_group(array(
+        'key' => 'group_5ccdff685d351',
+        'title' => 'Gallery',
+        'fields' => array(
+            array(
+                'key' => 'field_5ccdff6ed7e8e',
+                'label' => 'Albums',
+                'name' => 'gallery_albums',
+                'type' => 'wysiwyg',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'tabs' => 'all',
+                'toolbar' => 'full',
+                'media_upload' => 1,
+                'delay' => 0,
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'page',
+                    'operator' => '==',
+                    'value' => '103',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
         'label_placement' => 'top',
         'instruction_placement' => 'label',
         'hide_on_screen' => '',
