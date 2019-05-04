@@ -1,6 +1,6 @@
-.section-about {
+.section-about-equipment {
 
-  .about--right{
+  .about-equipment--right{
     font-size: $base--text-size;
     .side-by-side{
       p {
@@ -11,10 +11,15 @@
     }
   }
 
-  .about--right-sub {
+  .about-equipment--right-sub {
     display: flex;
     justify-content: space-between;
-    .about--right-subItem {
+
+    ul{
+      padding: 15px !important;
+    }
+
+    .about-equipment--right-subItem {
       flex: 0 0 calc(50% - 0.5em);
       @include respond-to(sm) {
         margin-left: 10%;
@@ -29,4 +34,3 @@
     }
   }
 }
-
