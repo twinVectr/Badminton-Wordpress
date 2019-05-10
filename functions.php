@@ -241,3 +241,9 @@ function my_remove_editor_from_post_type()
 
 // Add ACF settings
 require_once THEME_ROOT . '/ACFSettings.php';
+
+add_filter('carousel_slider_load_scripts', 'carousel_slider_load_scripts');
+function carousel_slider_load_scripts($load_scripts)
+{
+    return true;
+}

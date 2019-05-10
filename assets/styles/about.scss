@@ -30,3 +30,13 @@
   }
 }
 
+.owl-nav {
+  display: block !important;
+  
+  >button {
+    outline: 0;
+    padding: 20px !important;
+    background-color: gray !important;
+  }
+}
+
