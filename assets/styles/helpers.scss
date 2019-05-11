@@ -59,6 +59,12 @@ $sides: (Top, Bottom, Left, Right); // Leave this variable alone
   justify-content: flex-start;
 }
 
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .noPadding {
   padding: 0 !important;
 }

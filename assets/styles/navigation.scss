@@ -38,6 +38,7 @@
   }
 }
 
+
 .main-navigation-front {
   @extend .main-navigation;
   background: linear-gradient($black, rgba(0,0,0,0.001));
@@ -84,8 +85,8 @@
     transform: translate(-6%);
 
     ul {
-      margin-top: 21%;
-      padding-left: 12%;
+      margin-top: 15%;
+      padding-left: 15%;
       > li {
         list-style: none;
         padding-top: 40px;
@@ -112,7 +113,7 @@
   z-index: 8;
   background-color: #0e0e0e7d;
   border-radius: 100%;
-  height: 60px;
+  height: 50px;
 }
 
 .nav-toggle:focus {
@@ -129,7 +130,7 @@
   
   border-radius: 8px;
   height: 3px;
-  width: 42px;
+  width: 30px;
   margin-bottom: 8px;
 }
 
@@ -143,8 +144,8 @@
   .bar-top {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
-    -webkit-transform-origin: 15% 15%;
-            transform-origin: 15% 15%;
+    -webkit-transform-origin: 0% 15%;
+            transform-origin: 0% 15%;
   }
 
   .bar-mid {
@@ -154,7 +155,7 @@
   .bar-bot {
     -webkit-transform: rotate(45deg);
             transform: rotate(-45deg);
-    -webkit-transform-origin: 10% 95%;
-            transform-origin: 10% 95%;
+    -webkit-transform-origin: 0% 95%;
+            transform-origin: 0% 95%;
   }
 }
