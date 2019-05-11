@@ -7,6 +7,9 @@ $navClasses = $isFrontPage ? 'main-navigation-front' : 'main-navigation-other';
 
 <!-- #site-navigation start -->
 <nav class="main-navigation-mobile">
+  <a href="http://localhost" class="WM-nav-logo">
+    <img src="<?=THEME_ROOT_URL?>/assets/images/WM-logo.png" height="100">
+  </a>
   <button class="nav-toggle">
     <span class="bar-top"></span>
     <span class="bar-mid"></span>
