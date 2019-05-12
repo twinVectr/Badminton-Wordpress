@@ -1,5 +1,14 @@
 .section-hero {
-  height: 800px;
+  height: 600px;
+  @include respond-to(sm) {
+    height: 650px;
+  }
+  @include respond-to(md) {
+    height: 700px;
+  }
+  @include respond-to(lg) {
+    height: 800px;
+  }
 }
 
 .WM-background-image-container {

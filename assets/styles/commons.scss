@@ -34,8 +34,14 @@
 }
 
 .WM-section {
-  height: 500px;
+  min-height: 400px;
   position: relative;
+  @include respond-to(sm) {
+    min-height: 450px;
+  }
+  @include respond-to(lg) {
+    min-height: 500px;
+  }
 }
 
 .WM-blockquote {

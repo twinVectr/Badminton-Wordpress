@@ -1,4 +1,3 @@
-
 <?php
 
 $sectionContent = get_field('location-hours-classes');
@@ -10,7 +9,6 @@ $sectionContent = array(
     'rightContent' => $sectionContentSplit[1],
     'sideBySideLeft' => $sectionContentSplit[2],
     'sideBySideRight' => $sectionContentSplit[3],
-    'sideBySideBottom' => do_shortcode('[contact-form-7 id="59" title="Join Now"]'),
 );
 
 global $mustache;
