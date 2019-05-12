@@ -1,34 +1,69 @@
-
-
 .wpcf7-form {
+
+  .wpcf7-form-member {
+    display: flex; 
+    flex-wrap: wrap; 
+    width: 100%;
+    .wpcf7-form-firstname {
+      flex: 1;
+    }
+    .wpcf7-form-secondname {
+      flex: 1;
+      @include respond-to(sm) {
+        margin: 0;
+      }
+    }
+  }
 
   p {
     margin-top: 10px !important;
     width: 94%;
   }
 
-  input[name=first-name] {
+  .input--common {
     padding: 15px;
     margin-top: 5px;
     margin-right: 5px;
     width: auto;
     display: inline-block;
     font-size: $text-xs;
+    width: 81%;
+  }
+
+  input[name=first-name] {
+
+    @extend .input--common;
+    
+    @include respond-to(sm) {
+      width: 88%;
+    }
   }
 
   input[name=last-name] {
-    @extend input[name=first-name];
-    margin-right: 0;
+    @extend .input--common;
+    margin-left: 5%;
+    @include respond-to(sm) {
+      margin-left: 2%;
+      width: 88%;
+    }
   }
 
   input[type=email], input[name=your-subject] {
-    @extend input[name=last-name];
+    @extend .input--common;
+
     display: block;
-    width: 94%;
+    width: 93%;
+
+    @include respond-to(sm) {
+      width: 95%;
+    }
   }
 
   .wpcf7-textarea {
-    width: 99% !important;
+    width: 100% !important;
+    @include respond-to(sm) {
+      width: 99% !important;
+    }
   }
 
   input[type=submit] {
