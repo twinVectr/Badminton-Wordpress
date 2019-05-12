@@ -1,5 +1,7 @@
-<div class="section-about-slider container">
-
-  <?=do_shortcode('[carousel_slide id="92"]');?>
-
+<div class="WM-section section-about-slider vertical-center">
+  <div class="container">
+    <div class="row">
+      <?= do_shortcode('[metaslider id="111"]'); ?>
+    </div>
+  </div>
 </div>

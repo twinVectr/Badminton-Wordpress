@@ -63,9 +63,25 @@
 
 .section-open-hours {
   background-color: $lighter-gray;
-  @include respond-to(md) {
-    .WM-button {
+  text-align: center;
+
+  .WM-button {
+    @extend .textCenter;
+    @include respond-to(sm) {
+      float: none;
+    }
+
+    @include respond-to(lg) {
       float: right;
+    }
+  }
+
+  .section-open-hours--time{
+    position: relative;
+    left: 0%;
+
+    @include respond-to(lg) {
+      left: -8%;
     }
   }
 }
@@ -100,3 +116,4 @@
      }
    }
 }
+

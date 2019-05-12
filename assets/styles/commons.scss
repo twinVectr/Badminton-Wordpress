@@ -34,8 +34,9 @@
 }
 
 .WM-section {
-  min-height: 400px;
+  min-height: 250px;
   position: relative;
+
   @include respond-to(sm) {
     min-height: 450px;
   }

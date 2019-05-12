@@ -6,7 +6,7 @@
   margin: 3% 9%;
   float: left;
 
-  @include respond-to(sm) {
+  @include respond-to(md) {
     margin: 0 0 0 4%;
   }
 }
