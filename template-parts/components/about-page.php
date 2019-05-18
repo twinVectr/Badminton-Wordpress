@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row vSpace"></div>
     <div class="row">
-      <?=$children?>
+      <?= $children ?>
     </div>
     <div class="row vSpace"></div>
   </div>

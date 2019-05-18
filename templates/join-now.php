@@ -3,6 +3,7 @@
 
 get_header();
 
+get_template_part('template-parts/page-sections/common', 'hero-banner');
 get_template_part('template-parts/page-sections/join', 'now');
 
 get_footer();
