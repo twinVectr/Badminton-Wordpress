@@ -26,7 +26,7 @@ $trainers = get_posts($args);
     </div>
     <div>
       <h2 class="noPadding marginTop5"><?=$headCoachQuery->post_title?></h2>
-      <p class="paddingTop20"><?=substr($headCoachQuery->post_content, 0, 400)?>...</p>
+      <p class="paddingTop20"><?=substr(strip_tags($headCoachQuery->post_content), 0, 400)?>...</p>
       <div class="marginTop20 marginBottom30">
         <p class="marginBottom10"><b>Specification:</b></p>
         <?=$headCoach_specification?>
