@@ -5,7 +5,7 @@ $sectionContent = get_field('location-hours-classes');
 
 $sectionContentData = explode("@@@@", $sectionContent);
 
-$sectionContentTwoSplit = explode("####", $sectionContentData[1]);
+$sectionContentTwoSplit = explode("####", $sectionContentData[2]);
 
 $sectionContentTwo = array(
     'leftContent' => $sectionContentTwoSplit[0],
