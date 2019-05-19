@@ -519,7 +519,7 @@ if (function_exists('acf_add_local_field_group')) :
         'key' => 'field_5ce03ec3cb7cc',
         'label' => 'Hero Banner Subtext',
         'name' => 'hero_banner_subtext',
-        'type' => 'text',
+        'type' => 'wysiwyg',
         'instructions' => '',
         'required' => 0,
         'conditional_logic' => 0,
