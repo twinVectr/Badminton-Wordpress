@@ -29,8 +29,12 @@
   color: $white;
 }
 
-.section-membership{
+.hero-sub-text {
+  color: $white;
+  line-height: 1.5;
+}
 
+.section-membership{
   .membership--right{
     font-size: $base--text-size;
     .side-by-side{
