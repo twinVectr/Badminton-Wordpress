@@ -84,7 +84,7 @@ $sides: (Top, Bottom, Left, Right); // Leave this variable alone
 .displayFlex {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-evenly;
 }
 
 .inlineBlock {

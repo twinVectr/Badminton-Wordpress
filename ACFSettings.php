@@ -566,6 +566,11 @@ if (function_exists('acf_add_local_field_group')) :
           'operator' => '!=',
           'value' => 'front_page',
         ),
+        array(
+          'param' => 'post_type',
+          'operator' => '!=',
+          'value' => 'trainers',
+        ),
       ),
     ),
     'menu_order' => 0,
